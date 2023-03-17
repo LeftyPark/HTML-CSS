@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>알랜드</h1>
+
+        <div>메뉴버튼</div>
+    </header>
+ 
+    <!-- ---------------------------------------------------------------- -->
+
+    <nav>
+        <h1>부안에 오면 꼭! 들리는 카페</h1>
+
+        <div>전체메뉴</div>
+
+        <nav>
+            <h1>인기메뉴</h1>
+            <ul>
+                <li><a target="_blank" href="menu/detail.html"><img height="100" src="images/17.jpg" alt="딸기청"> </a>과일청</li>
+                <li><a target="_blank" href="menu/detail.html"><img height="100" src="images/8.jpg" alt="딸기청"> </a>아메리카노</li>
+                <li><a target="_blank" href="menu/detail.html"><img height="100" src="images/28.jpg" alt="딸기청"> </a>버터쿠키</li>
+            </ul>
+        </nav>
+            <!-- 문서연결 태그 a의 속성 __ href(hypertext reference): 연결주소 지정 
+                                       __ target="_blank"는 클릭시 새창이 열려 페이지가 이동되고, 기본값은 _self이며 이는 현재 창에서 이동된다   
+                   img 이미지 태그 속성 __ src : (source) 이미지 소스의 URL을 명시   // alt : 이미지 대체 문구   // heigth : 크기
+                                -->
+
+        <div>알랜드 오시는 길</div>
+    </nav>
+
+            <!-- /(절대경로)  ./(현재 경로 이동할 때. 생략가능)   ../(이전 단계로 이동할 때)   -->
+<!-- ---------------------------------------------------------------- -->
+
+                       <!-- 
+                            - 문서 구성요소 : 콘텐츠, 구조(html), 스타일(css)
+                            - 마크업의 도구 __ 태그
+                            - 컨텐츠 구분(제목과 내용을 구분)하는 태그 __ h(제목)과 p(문장)으로 구분한다
+                            - div __ 컨텐츠를 나눠서 분리해주는 태그, h도 p도 스스로를 구분하는 태그이나
+                              div는 무엇을 구분하는지, 특별한 의미가 없이 묶을 경우 범용적으로 쓰이는 태그이다
+                        
+
+                            - h(제목)에는 번호(레벨)가 정해지고 h1은 문서내에 하나만 있어야 한다
+                              여기서 문서는 (header, footer, main, aside가 구분된지만 h1은 한번만 쓸 수 있고
+                              나머지 에서의 제목은 h2로 시작된다)
+                              (섹션 영역에서의 h는 h1로 시작 한다)
+
+
+                            - 목록 태그 __ ul(순서 없는), ol(순서가 있는), dl(정의목록, 제목과 내용이 한쌍을 이루는)
+                              li __(list item) 목록 안에 들어가는 태그
+                            - 리스트 태그 편하게 만드는 법 __ ul>li*3
+                            - li 사이에 리스트 항목 사이에는 다른 것(div와 같은)을 넣으면 안된다 (구조를 깨는 것이기 떄문)
+
+
+                            - 시멘틱 태그 __ 콘텐츠를 구분해줄 수 있게 의미가 살아있는 태그(header, footer, main 등)
+
+                            - 섹션 태그 __ 제목이있고 제목이 이끌고 있는 컨텐츠(내용)를 묶는 경우 섹션태그이다
+                                          (제목과 내용을 묶으면 섹션테그)
+                                          (섹션 영역에서의 h는 h1로 시작 한다)
+
+                            - header는 섹션이 아니다, header의 섹션은 body이다
+
+                            - 콘텐츠의 아웃라인을 쉽게 만들어주는 태그 __ article, aside, nav
+                            - article __ 내용(문장)을 갖고있는 콘텐츠     (header[o], footer[o], main[x])
+                            - aside __ 사이드를 의미 메인과 동떨어진 의미  (header[o], footer[o], main[x])
+                            - nav __ 링크로 이루어져있는 콘텐츠 블럭       (header[x], footer[x], main[x])
+                                                               (body __ (header[o], footer[o], main[o])
+
+                            - 위까지 블럭/영역/방을 만드는 태그 설명
+
+
+
+                            - 아래부터는 인라인 태그 내용
+
+                            - 인라인은 한줄에 쭉 쓰는 것
+                            - 인라인 태그는 컨텐츠를 설명하는 태그로 알고있어라
+                            - 방안에 있는 컨텐츠들을 꾸미는 태그 _ 인라인태그
+
+                            - i >> italic // u >> underline // b >> bold // br >> line break 내려쓰기   
+                              span __ 인라인계의 div태그 (의미는 무시하고 스타일만을 위한 인라인 태그가 필요할 때)
+                              wbr __ word break opportunity 공간이 남으면 내려쓰기x 공간이 부족하면 내려쓰기o 하도록 위치를 잡는 것 
+                              sup __ 제곱근, 승수
+                            
+                            - input, select, textarea, button, label, output의 관련 블록 태그
+                                 form __ 
+                                 legend __ 그룹핑된 것들의 타이틀을 정할 때
+                                 fieldset __ 필드들을 그룹핑 할 때. 테두리
+
+
+
+                         -->
+
+    <section id = "aland-info">
+        <h2>알랜드 소개</h2>
+
+        <article>
+            <h1>직접 만든 과일청을 맛보세요.</h1>
+            <div>과일청</div>
+
+            <p>
+                신선한 과일과 알랜드만의 레시피로
+                과일향의 풍미를 충분히 느낄 수 있는
+                수제청을 드셔보세요.
+            </p>
+        </article>
+
+
+        <article>
+            <h1>직접 구운 수제 쿠키를 만나보세요.</h1>
+            <div>쿠키</div>
+
+            <p>
+                신선한 버터 그리고 견과류를 
+                이용해 바삭함을 더해 매일마다 
+                직접 구운 맛난 쿠키를 만나보세요.
+            </p>
+        </article>
+
+        <article>
+            <h1>다양한 로스팅으로 다채로운 맛을 느껴보세요.</h1>
+            
+            <div>커피</div>
+
+            <p>
+                콜롬비아산의 상큼한 맛, 과테말라산의 풍미,
+                그 외에 5가지 이상의 다채로운 원두의 맛을 느껴보세요.
+            </p>
+        </article>
+
+
+        <article>
+            <h1>알랜드 주변의 명소를 찾아보세요.</h1>
+            <div>명소</div>
+
+            <p>
+                알랜드 주변에는 30곳이 넘는 
+                힐링 장소에서 맛나는 커피와 경치로 힐링을 해보세요.
+            </p>
+        </article>
+    </section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section>
+    <header>
+        <h1>브안의 아름다운 명소</h1>
+        <div>전체명소</div>
+    </header>
+</section>
+
+<secrion>
+    <h1>채석강 </h1>
+        <p>
+            바닷물에 침식이 되어서 샇인 절벽이 
+            여러권의 책을 쌓아 놓은 듯..
+        </p>
+</secrion>
+
+
+
+</body>
+</html>
