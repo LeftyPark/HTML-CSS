@@ -1,29 +1,21 @@
-
 *{
     margin: 0px;
     padding: 0px;
-    background-color: black;
-    list-style: none;
-    /* text-decoration: none; */
+
+}
+
+body {
+    background-color: rgb(30, 26, 26);
 }
 
 
 .welcome{
+    height: 600px;
     color: black;
     background-image: url("../img/9.jpg");
     background-size: cover;
-    /* opacity: 50%; */
-    /* font-size: 20px; */
-    /* margin: 0; */
-    /* height: 100%; */
-    /* top: 0px;
-
-/* 
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../img/9.jpg');
     background-repeat : no-repeat;
-    background-size : cover; */
+
 }  
 
 
@@ -32,9 +24,9 @@
     opacity: 0.8;
     height: 4em;
     
-    display: flex; justify-content: space-between;
+    display: flex; 
+    justify-content: space-between;
 
-    
     /* text-align:justify; */
 }
 
@@ -44,6 +36,9 @@
     font-size: 30px;
     letter-spacing:2px;
     margin-left: 40px;
+    position: absolute;
+    top: 10px;
+    /* bottom: px; */
 
 }
 
@@ -52,87 +47,108 @@
     width: 22px;
     height: 2px;
     margin: 4px 50px;
-    
-    /* display: grid; */
-    /* margin: auto; */
-    /* display: flex; */
-    /* color: white; */
+    position: relative;
+    top: 20px;
+    right: -10px;
 }
 .main1{
     color: white;
     text-align: center;
-    margin-top: 150%;
+    /* margin-top: 150%; */
+    position: relative;
+    top: 70%;
 }
-.main1 > p{font-size:medium;}
-.main1 > h1{font-size:x-large; line-height: 30spx; bottom: 0px; }
+.main1 > p{font-size: 13px; line-height: 25px; letter-spacing: 0px; }
+.main1 > h1{font-size: 23px; line-height: 30px; letter-spacing: 0px; }
 
 
 .fruit{
-    /* text-align:ce; */
     margin-top: 10%;
     margin-left: 25px;
     color: white;
 
 }
-.fruit > h1{line-height:35px;}
-.fruit > p{margin-top: 2%; line-height:20px; font-size: small;}
+.fruit > h1{font-size: 20px; line-height:25px; letter-spacing: -1px;}
+.fruit > p{margin-top: 2%; line-height:20px; font-size: 12px; letter-spacing: -1px;}
 .fruit > img{margin-top: 5%;}
 
 
 .cookie{
     color:white;
     text-align:center;
-    margin-top: 15%;
+    margin-top: 12%;
 }
+.cookie > h1{font-size: 20px; letter-spacing: -1px;}
 .cookie > img{margin-top: 5%;}
-.cookie > p{margin-top: 5%; line-height:20px; font-size: 30;}
+.cookie > p{
+    margin-top: 3%; 
+    line-height:20px; 
+    font-size: 12px; 
+    letter-spacing: -1px;}
 
 
 .roast{
     color: white;
     text-align:right;
     margin-top: 15%;
+    margin-right: 25px;
 }
 .roast > img{margin-top: 5%;}
-.roast > p{margin-top: 5%; line-height:20px; font-size: 30;}
-.roast >h1 {margin-top: 0%;}
+.roast > h1 {font-size: 20px; letter-spacing: -1px;}
+.roast > p{
+    margin-top: 2%; 
+    line-height:20px; 
+    font-size: 12px; 
+    letter-spacing: -1px;}
+
 
 
 .place{
     background-image: url("../img/b14.jpg");
-    background-size:cover;
-    background-position: center;
-    width: 350px;
-    height: 350px;
-    text-align:center;
-
     margin-top: 15%;
-    
+    height: 300px;
+    background-size: cover;
+    background-repeat : no-repeat;
+
+
 }
-.place > h1 {
+.place > h1{
+    position: relative; top: 100px; 
+    color: white; font-size: 20px; 
+    letter-spacing: -1px; text-align: center;
+}
+.final > p{
+    text-align:center;
     color: white; 
-    text-align: center;
-    /* text-align: initial; */
+    margin: 20px;
+    line-height:20px;
+    font-size: 12px;
+    margin-bottom: 40px;
+
 }
-/* .place > img{margin-top: 5%;} */
-.place1 > p{text-align:center; margin-top: 5%; line-height:20px; font-size: 30;}
 
 
 .footer{
     background-color: dimgrey;
-    background-size: 150px;
-    margin-top: 15%;
+    background-size: 100px;
+    padding: 20px;
     text-align: center;
     color: white;
 }
 
 .footer > h1{
-    font-size: 13px;
-    width: 130px;
-    height: 30px;
-    border: 3px solid white;
+    font-size: 10px;
+    width: 100%;
+    display: inline;
+    padding: 8px;
+    border: 2px solid white;
     border-radius: 10px;
-
+    background-color: dimgrey;
 }
 
-.footer > p {font-size: 10px; margin-top: 2%; margin-bottom: 20%;} 
+.footer > p {
+    color: white;
+    font-size: 12px; 
+    background-color: dimgrey;
+    margin: 20px 0;
+} 
